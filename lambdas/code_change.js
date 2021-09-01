@@ -6,7 +6,7 @@
 // BITBUCKET_TOKEN=<Bitbucket access token>
 
 const axios = require('axios').default;
-const db = require("db_config.js");
+const db = require("db/db_config.js");
 
 // This variable controls the duration of the pentest cycle. Code changes after the duration will create a new cycle (Jira Epic)
 // and rollover existing opened Jira issues.

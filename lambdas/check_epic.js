@@ -1,7 +1,10 @@
 // This lambda function should be called by a daily cron job
 
+// Expected environment variables:
+// JIRA_TOKEN=<Jira access token>
+
 const axios = require('axios').default;
-const db = require("db_config.js");
+const db = require("db/db_config.js");
 
 // Set this variable to control how many days since no code change before moving Epic state from OPEN to STARTED REVIEW
 const EPIC_START_BUFFER_DAYS = 2;
